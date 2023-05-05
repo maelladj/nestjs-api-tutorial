@@ -10,4 +10,9 @@ export class AuthService {
     signin() {
         return {msg: 'I am signed in'}
     }
+
+    test() {
+
+        return {msg: 'Hello world '}
+    }
 }
