@@ -16,8 +16,4 @@ export class AuthController {
         return this.authService.signin(dto)
     }
 
-    @Get('test')
-    test() {
-        return this.authService.test()
-    }
 }
