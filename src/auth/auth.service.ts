@@ -70,9 +70,10 @@ export class AuthService {
         throw new ForbiddenException (
             'Credentials incorrect',
             );
-            
+
         // send back the user
-        return {msg: 'I am signed in'}
+        delete user.hash;
+        return user;
     }
 
     test() {
